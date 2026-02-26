@@ -1,0 +1,55 @@
+# 🏃‍♂️ RunnerNext: Team Challenge Edition 2026
+
+![Status](https://img.shields.io/badge/Status-Finalizado-emerald)
+![Tech](https://img.shields.io/badge/Stack-FastAPI%20%7C%20PostgreSQL%20%7C%20H3-sky)
+![Privacy](https://img.shields.io/badge/Security-Ghost%20Protocol-ghost)
+
+O **RunnerNext** é uma plataforma de alta performance desenvolvida para competições de corrida interna em empresas. O sistema utiliza Inteligência Artificial para monitorar a saúde dos colaboradores e algoritmos geoespaciais para garantir a privacidade total.
+
+---
+
+## 💎 Diferenciais Estratégicos
+
+### 👻 Ghost Protocol (H3 Indexing)
+Privacidade levada a sério. O app utiliza a biblioteca **Uber H3** para converter coordenadas residenciais em hexágonos de resolução 10. Os endereços dos colaboradores nunca são salvos no banco, apenas a zona de atividade aproximada.
+
+### 🧠 Gêmeo Digital & Efficiency Factor (EF)
+Não premiamos apenas quem corre mais. O motor de IA calcula o **EF**:
+$$EF = \frac{\text{Metros por Minuto}}{\text{BPM Médio}}$$
+Se a eficiência cair drasticamente, o sistema detecta **fadiga central** e sugere descanso, aplicando penalidades de pontos para quem ignora alertas de overtraining.
+
+---
+
+## 🚀 Funcionalidades da Versão "Team Edition"
+
+* **Autenticação JWT:** Login individual seguro com foto de perfil e recuperação de senha.
+* **Mural Social (Social Feed):** Compartilhamento de treinos em cards com "Kudos" (elogios animados) e comentários em tempo real.
+* **Ranking Gamificado:** Tabela de liderança que soma KM, consistência e bônus de performance técnica.
+* **Dashboard Admin:** Painel para o gestor com exportação de dados para **Planilha (.CSV)**.
+
+---
+
+## 🛠️ Stack Tecnológica
+
+* **Backend:** Python 3.11+ / FastAPI
+* **Banco de Dados:** PostgreSQL 15 + SQL Alchemy
+* **Geospatial:** Uber H3 Python Library
+* **Containerização:** Docker & Docker Compose
+* **Segurança:** OAuth2 + JWT (JSON Web Tokens)
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+/runnernext
+├── /api
+│   ├── main.py          # Endpoints e Lógica de Negócio
+│   ├── auth.py          # JWT, Login e Gestão de Usuários
+│   └── models.py        # Tabelas (User, Activity, Kudos)
+├── /ghost_protocol
+│   └── privacy.py       # Algoritmo de Ofuscação H3
+├── /static
+│   └── profile_pics/    # Armazenamento de fotos de perfil
+├── docker-compose.yml   # Orquestração da infra
+└── requirements.txt     # Dependências do sistema
