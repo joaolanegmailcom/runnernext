@@ -1,0 +1,19 @@
+<script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+
+<button id="upload_widget" class="bg-sky-500 text-black px-4 py-2 rounded-xl font-bold">
+    Mudar Foto de Perfil
+</button>
+
+<script>
+var myWidget = cloudinary.createUploadWidget({
+  cloudName: 'seu_cloud_name', 
+  uploadPreset: 'perfil_preset'}, (error, result) => { 
+    if (!error && result && result.event === "success") { 
+      console.log('URL da foto:', result.info.secure_url);
+      // Aqui você salva essa URL no seu banco Supabase
+    }
+});
+document.getElementById("upload_widget").addEventListener("click", function(){
+    myWidget.open();
+}, false);
+</script>
