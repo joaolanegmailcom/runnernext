@@ -1,0 +1,47 @@
+<section class="max-w-6xl mx-auto my-12 font-sans">
+    <div class="grid md:grid-cols-2 gap-8">
+        
+        <div class="bg-slate-900 border border-indigo-500/30 rounded-[3rem] p-8 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-6 opacity-10 text-6xl">
+                <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h3 class="text-white font-black text-xl mb-4 italic uppercase">Squad Battles</h3>
+            <p class="text-slate-400 text-sm mb-6">A competição não é mais individual. Setores da empresa (ex: TI vs Vendas) disputam a <strong>Média de Eficiência Coletiva</strong>.</p>
+            
+            <div class="space-y-4">
+                <div class="flex items-center justify-between bg-black/40 p-4 rounded-2xl">
+                    <span class="text-xs font-bold">SQUAD VENDAS</span>
+                    <div class="flex-1 mx-4 h-2 bg-slate-800 rounded-full overflow-hidden">
+                        <div class="bg-indigo-500 h-full" style="width: 75%"></div>
+                    </div>
+                    <span class="text-xs font-black text-indigo-400">1.82 EF</span>
+                </div>
+                <div class="flex items-center justify-between bg-black/40 p-4 rounded-2xl">
+                    <span class="text-xs font-bold">SQUAD TECH</span>
+                    <div class="flex-1 mx-4 h-2 bg-slate-800 rounded-full overflow-hidden">
+                        <div class="bg-emerald-500 h-full" style="width: 82%"></div>
+                    </div>
+                    <span class="text-xs font-black text-emerald-400">1.95 EF</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-900 border border-rose-500/30 rounded-[3rem] p-8 shadow-2xl">
+            <h3 class="text-white font-black text-xl mb-4 italic uppercase">Análise de Cadência & Impacto</h3>
+            <p class="text-slate-400 text-sm mb-6">Usamos o acelerômetro do celular para medir a <strong>Oscilação Vertical</strong>. Mudanças bruscas geram um alerta de lesão.</p>
+            
+            <div class="flex gap-4">
+                <div class="flex-1 bg-rose-500/10 p-4 rounded-2xl border border-rose-500/20 text-center">
+                    <i class="fa-solid fa-shoe-prints text-rose-500 mb-2"></i>
+                    <p class="text-[10px] text-slate-500 uppercase font-bold">Cadência</p>
+                    <p class="text-lg font-black text-white">172 <span class="text-[10px] font-normal">ppm</span></p>
+                </div>
+                <div class="flex-1 bg-emerald-500/10 p-4 rounded-2xl border border-emerald-500/20 text-center">
+                    <i class="fa-solid fa-wind text-emerald-500 mb-2"></i>
+                    <p class="text-[10px] text-slate-500 uppercase font-bold">Impacto</p>
+                    <p class="text-lg font-black text-white">2.4 <span class="text-[10px] font-normal">G</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
