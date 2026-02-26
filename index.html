@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunnerNext | Team Edition</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #020617; color: #f1f5f9; font-family: sans-serif; }
+        .glass { background: rgba(15, 23, 42, 0.9); border: 1px solid rgba(56, 189, 248, 0.1); backdrop-filter: blur(10px); }
+        @keyframes pulse-kudo { 0% { transform: scale(1); } 50% { transform: scale(1.2); color: #f43f5e; } 100% { transform: scale(1); } }
+        .kudo-active { animation: pulse-kudo 0.4s ease; color: #f43f5e !important; }
+    </style>
+</head>
+<body class="p-4 pb-24">
+
+    <header class="flex justify-between items-center mb-8 pt-4">
+        <div class="flex items-center gap-3">
+            <div class="relative">
+                <img src="https://ui-avatars.com/api/?name=Usuario&background=0ea5e9&color=fff" class="w-12 h-12 rounded-full border-2 border-sky-500">
+                <div class="absolute -bottom-1 -right-1 bg-emerald-500 w-4 h-4 rounded-full border-2 border-slate-900"></div>
+            </div>
+            <div>
+                <h1 class="text-lg font-black italic uppercase italic">Runner<span class="text-sky-400">Next</span></h1>
+                <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Season 2 Ativa 🚀</p>
+            </div>
+        </div>
+        <i class="fa-solid fa-bell text-slate-400 text-xl"></i>
+    </header>
+
+    <div class="glass rounded-[2rem] overflow-hidden mb-6 shadow-2xl">
+        <div class="p-5 flex items-center justify-between border-b border-white/5">
+            <span class="text-[10px] font-bold text-slate-500 uppercase">Atividade da Equipe</span>
+            <span class="text-[10px] bg-sky-500/10 text-sky-400 px-2 py-1 rounded-full font-bold">GHOST MODE ON 🛡️</span>
+        </div>
+        
+        <div class="p-6">
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="bg-black/40 p-4 rounded-2xl border border-white/5">
+                    <p class="text-[9px] text-slate-500 uppercase font-bold">Distância</p>
+                    <p class="text-2xl font-black text-white italic">12.4 <span class="text-xs font-normal">km</span></p>
+                </div>
+                <div class="bg-black/40 p-4 rounded-2xl border border-white/5">
+                    <p class="text-[9px] text-slate-500 uppercase font-bold">EF Score</p>
+                    <p class="text-2xl font-black text-emerald-400 italic">1.82</p>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center">
+                <button onclick="this.querySelector('i').classList.toggle('kudo-active')" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center">
+                        <i class="fa-solid fa-heart text-slate-500 transition"></i>
+                    </div>
+                    <span class="text-xs font-bold text-slate-400">14 Kudos</span>
+                </button>
+                <div class="flex -space-x-2">
+                    <img src="https://ui-avatars.com/api/?name=A&background=random" class="w-6 h-6 rounded-full border-2 border-slate-900">
+                    <img src="https://ui-avatars.com/api/?name=B&background=random" class="w-6 h-6 rounded-full border-2 border-slate-900">
+                    <div class="w-6 h-6 rounded-full bg-slate-800 border-2 border-slate-900 text-[8px] flex items-center justify-center">+5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] glass rounded-full p-4 flex justify-around shadow-2xl z-50">
+        <i class="fa-solid fa-house text-sky-400 text-xl"></i>
+        <i class="fa-solid fa-ranking-star text-slate-500 text-xl"></i>
+        <div class="bg-sky-500 w-12 h-12 rounded-full flex items-center justify-center -mt-10 border-4 border-slate-950 shadow-lg shadow-sky-500/20 text-black font-black">
+            <i class="fa-solid fa-play"></i>
+        </div>
+        <i class="fa-solid fa-users text-slate-500 text-xl"></i>
+        <i class="fa-solid fa-user-gear text-slate-500 text-xl"></i>
+    </nav>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
+</body>
+</html>
