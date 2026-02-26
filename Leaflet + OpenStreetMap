@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<div id="map-canvas" class="h-48 w-full rounded-3xl mt-4"></div>
+
+<script>
+    // Lógica para renderizar o mapa com Ghost Protocol (H3 centralizado)
+    var map = L.map('map-canvas').setView([-23.55, -46.63], 13); // Coordenadas exemplo
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Adiciona o círculo de privacidade (Ghost Mode)
+    var circle = L.circle([-23.55, -46.63], {
+        color: '#38bdf8',
+        fillColor: '#38bdf8',
+        fillOpacity: 0.2,
+        radius: 500 // 500 metros de ofuscação
+    }).addTo(map);
+</script>
