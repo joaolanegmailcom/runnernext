@@ -1,0 +1,12 @@
+import { createClient } from '@supabase/supabase-client'
+
+const supabase = createClient('SUA_URL_SUPABASE', 'SUA_CHAVE_ANON_PUBLIC')
+
+// Função para postar treino com 0 custo
+async function postarTreino(userId, km, efScore) {
+  const { data, error } = await supabase
+    .from('treinos')
+    .insert([{ user_id: userId, distancia: km, ef: efScore }])
+    
+  if (!error) console.log("Treino salvo no Supabase!");
+}
