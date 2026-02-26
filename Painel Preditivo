@@ -1,0 +1,35 @@
+<section class="max-w-6xl mx-auto mb-20 px-6">
+    <div class="bg-white rounded-[3rem] p-10 shadow-2xl">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
+            <div>
+                <h2 class="text-slate-900 text-3xl font-black italic tracking-tighter uppercase">Season 2 <span class="text-indigo-600">Analytics</span></h2>
+                <p class="text-slate-500 text-sm font-bold">Predição de Saúde e Engajamento de Squads</p>
+            </div>
+            <div class="flex gap-2">
+                <button class="bg-slate-100 text-slate-800 px-6 py-3 rounded-2xl font-bold text-xs">LOGS TÉCNICOS</button>
+                <button class="bg-indigo-600 text-white px-6 py-3 rounded-2xl font-bold text-xs shadow-xl shadow-indigo-200">GERAR RELATÓRIO IA</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="border border-slate-100 p-6 rounded-3xl bg-slate-50">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="w-3 h-3 bg-rose-500 rounded-full animate-ping"></span>
+                    <h5 class="text-xs font-black text-slate-400 uppercase">Risco de Lesão</h5>
+                </div>
+                <p class="text-3xl font-black text-slate-900 italic">4 Atletas</p>
+                <p class="text-[10px] text-slate-500 mt-2">Baseado na oscilação vertical detectada nas últimas 48h.</p>
+            </div>
+            <div class="border border-slate-100 p-6 rounded-3xl bg-slate-50">
+                <h5 class="text-xs font-black text-slate-400 uppercase mb-4">Squad Mais Eficiente</h5>
+                <p class="text-3xl font-black text-indigo-600 italic">Time Logística</p>
+                <p class="text-[10px] text-slate-500 mt-2">Crescimento de 12% no EF médio semanal.</p>
+            </div>
+            <div class="border border-slate-100 p-6 rounded-3xl bg-slate-50">
+                <h5 class="text-xs font-black text-slate-400 uppercase mb-4">Engajamento Social</h5>
+                <p class="text-3xl font-black text-slate-900 italic">1.2k <span class="text-sm">Kudos</span></p>
+                <p class="text-[10px] text-slate-500 mt-2">Taxa de interação 40% maior que na Season 1.</p>
+            </div>
+        </div>
+    </div>
+</section>
