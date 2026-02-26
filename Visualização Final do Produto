@@ -1,0 +1,35 @@
+<section class="max-w-4xl mx-auto bg-slate-950 p-8 rounded-[3rem] border border-slate-800 shadow-2xl font-sans">
+    <div class="flex items-center justify-between mb-10">
+        <div class="flex items-center gap-4">
+            <img src="https://ui-avatars.com/api/?name=Sua+Foto&background=0ea5e9&color=fff" class="w-14 h-14 rounded-full border-2 border-sky-500">
+            <div>
+                <h3 class="text-white font-black italic">MEU PERFIL</h3>
+                <span class="text-sky-400 text-xs font-bold uppercase tracking-widest">12º Lugar no Ranking</span>
+            </div>
+        </div>
+        <button class="bg-emerald-600 text-white px-6 py-2 rounded-2xl text-[10px] font-bold uppercase tracking-widest">
+            Exportar Planilha (Admin)
+        </button>
+    </div>
+
+    <div class="bg-slate-900 rounded-3xl p-6 border border-slate-800">
+        <p class="text-[10px] text-slate-500 font-bold uppercase mb-4 tracking-widest">Último treino da equipe</p>
+        <div class="flex gap-4 mb-6">
+            <div class="bg-black/40 p-4 rounded-2xl flex-1 text-center">
+                <p class="text-2xl font-black text-white italic">12.5 km</p>
+                <p class="text-[9px] text-slate-500 uppercase">Distância Total</p>
+            </div>
+            <div class="bg-black/40 p-4 rounded-2xl flex-1 text-center border-l-4 border-emerald-500">
+                <p class="text-2xl font-black text-emerald-500 italic">1.62</p>
+                <p class="text-[9px] text-slate-500 uppercase">Eficiência (EF)</p>
+            </div>
+        </div>
+        <div class="flex justify-between items-center text-slate-400">
+            <div class="flex gap-4">
+                <i class="fa-solid fa-heart text-rose-500 animate-pulse"></i>
+                <span class="text-xs font-bold">14 Kudos recebidos</span>
+            </div>
+            <span class="text-[10px] uppercase font-bold italic">Ghost Protocol Ativo 🛡️</span>
+        </div>
+    </div>
+</section>
