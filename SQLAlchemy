@@ -1,0 +1,7 @@
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True)
+    full_name = Column(String)
+    profile_pic_url = Column(String) # Adicionado para as fotos
+    sensitive_locations = Column(JSON) # Ghost Protocol
+    vo2_max_estimate = Column(Float)
