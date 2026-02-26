@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunnerNext 2026 | Sistema Integrado S1 & S2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #020617; color: #f1f5f9; }
+        .glass { background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(56, 189, 248, 0.1); backdrop-filter: blur(12px); }
+        .code-block { font-family: 'JetBrains Mono', monospace; background: #000; color: #38bdf8; padding: 1.5rem; border-radius: 1rem; font-size: 0.8rem; border: 1px solid #1e293b; }
+        .badge-s2 { background: linear-gradient(90deg, #6366f1, #a855f7); color: white; padding: 2px 10px; border-radius: 99px; font-size: 9px; font-weight: bold; }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+
+    <header class="max-w-6xl mx-auto text-center mb-16">
+        <div class="inline-flex items-center gap-2 mb-4">
+            <span class="bg-sky-500/10 text-sky-400 border border-sky-500/20 px-3 py-1 rounded-full text-[10px] font-bold uppercase">Temporada 1: Fundação</span>
+            <span class="text-slate-600 font-bold">+</span>
+            <span class="badge-s2 uppercase">Temporada 2: Inteligência</span>
+        </div>
+        <h1 class="text-6xl font-black italic tracking-tighter uppercase mb-2">Runner<span class="text-sky-400">Next</span></h1>
+        <p class="text-slate-500 text-sm tracking-widest uppercase">The Ultimate Corporate Racing Ecosystem</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto space-y-12">
+
+        <section class="glass p-8 rounded-[2.5rem]">
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-shield-halved text-sky-400"></i> Segurança & Infra</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-xs font-bold text-slate-500 uppercase mb-4">Ghost Protocol (H3 Indexing)</h4>
+                    <p class="text-sm text-slate-400 mb-4">Proteção de residência via hexágonos de Resolução 10. Nunca gravamos latitude/longitude brutas perto de casa.</p>
+                    <div class="code-block">
+                        h3_index = h3.latlng_to_h3(lat, lng, 10)<br>
+                        # Se distância_casa < 2 hexágonos:<br>
+                        # Ofuscar para centro do hexágono
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-xs font-bold text-slate-500 uppercase">Auth & Sessão</h4>
+                    <ul class="text-xs space-y-2 text-slate-300">
+                        <li>• <strong class="text-white">JWT Access:</strong> Expiração de 24h.</li>
+                        <li>• <strong class="text-white">Profile Pics:</strong> Upload via FastAPI `UploadFile`.</li>
+                        <li>• <strong class="text-white">Soft Delete:</strong> Exclusão segura de treinos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass p-8 rounded-[2.5rem] border-l-4 border-rose-500">
+            <h2 class="text-2xl font-bold mb-6 flex items-center gap-3"><i class="fa-solid fa-microchip text-rose-500"></i> IA: Gêmeo Digital & Biomecânica</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-black/40 p-6 rounded-3xl text-center">
+                    <p class="text-[10px] text-slate-500 uppercase font-bold mb-2">Eficiência (EF)</p>
+                    <p class="text-2xl font-black text-white">1.85 <span class="text-xs text-emerald-500 font-normal">+12%</span></p>
+                </div>
+                <div class="bg-black/40 p-6 rounded-3xl text-center border border-rose-500/20">
+                    <p class="text-[10px] text-slate-500 uppercase font-bold mb-2">Impacto (G-Force)</p>
+                    <p class="text-2xl font-black text-rose-500 italic">2.8G</p>
+                    <span class="text-[9px] text-rose-400 font-bold uppercase">Risco de Lesão: Médio</span>
+                </div>
+                <div class="bg-black/40 p-6 rounded-3xl text-center">
+                    <p class="text-[10px] text-slate-500 uppercase font-bold mb-2">Cadência Média</p>
+                    <p class="text-2xl font-black text-white italic">174 <span class="text-xs font-normal">ppm</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass p-8 rounded-[2.5rem]">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="fa-solid fa-users-viewfinder text-indigo-400"></i> Gamificação de Squads</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-4">
+                    <h4 class="text-xs font-bold text-slate-500 uppercase">Batalha de Setores</h4>
+                    <div class="bg-slate-800/40 p-5 rounded-3xl flex items-center justify-between border-r-4 border-indigo-500">
+                        <div>
+                            <p class="text-sm font-bold">VENDAS SQUAD</p>
+                            <p class="text-[10px] text-slate-500">Média Coletiva: 12.5km</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-black italic text-indigo-400">#1</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800/40 p-5 rounded-3xl flex items-center justify-between">
+                        <div>
+                            <p class="text-sm font-bold text-slate-400">TECH SQUAD</p>
+                            <p class="text-[10px] text-slate-500">Média Coletiva: 11.2km</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-black italic text-slate-600">#2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-black/40 p-6 rounded-3xl flex flex-col justify-center text-center border border-white/5">
+                    <div class="flex justify-center -space-x-3 mb-4">
+                        <img src="https://ui-avatars.com/api/?name=A&background=random" class="w-10 h-10 rounded-full border-2 border-black">
+                        <img src="https://ui-avatars.com/api/?name=B&background=random" class="w-10 h-10 rounded-full border-2 border-black">
+                        <img src="https://ui-avatars.com/api/?name=C&background=random" class="w-10 h-10 rounded-full border-2 border-black">
+                    </div>
+                    <h4 class="text-sm font-bold text-white italic">"Ana deu um Kudo no seu treino!"</h4>
+                    <p class="text-[10px] text-slate-500 mt-2 italic uppercase">Notificações em Tempo Real via WebSockets</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white text-slate-900 p-8 rounded-[2.5rem] shadow-2xl">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+                <div>
+                    <h2 class="text-2xl font-black italic tracking-tighter uppercase">Painel Administrativo</h2>
+                    <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Auditoria de Desempenho & Saúde</p>
+                </div>
+                <button class="bg-black text-white px-8 py-4 rounded-2xl font-black text-xs hover:bg-sky-600 transition flex items-center gap-2">
+                    <i class="fa-solid fa-download"></i> EXPORTAR PLANILHA MASTER (.CSV)
+                </button>
+            </div>
+            <div class="overflow-hidden border border-slate-100 rounded-3xl">
+                <table class="w-full text-left text-xs">
+                    <thead class="bg-slate-50 text-slate-400 font-bold">
+                        <tr>
+                            <th class="p-4">Atleta</th>
+                            <th class="p-4">Setor/Squad</th>
+                            <th class="p-4">Km (Mês)</th>
+                            <th class="p-4">Status IA</th>
+                            <th class="p-4">EF Score</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-50">
+                        <tr>
+                            <td class="p-4 font-bold flex items-center gap-2"><img src="https://ui-avatars.com/api/?name=R+S" class="w-6 h-6 rounded-full"> Ricardo S.</td>
+                            <td class="p-4 text-slate-500">Vendas</td>
+                            <td class="p-4 font-black">124.5</td>
+                            <td class="p-4"><span class="bg-emerald-100 text-emerald-700 px-2 py-1 rounded-md font-bold">ÓTIMO</span></td>
+                            <td class="p-4 font-mono">1.82</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold flex items-center gap-2"><img src="https://ui-avatars.com/api/?name=A+L" class="w-6 h-6 rounded-full"> Ana Luz</td>
+                            <td class="p-4 text-slate-500">Tech</td>
+                            <td class="p-4 font-black">98.2</td>
+                            <td class="p-4"><span class="bg-amber-100 text-amber-700 px-2 py-1 rounded-md font-bold">FADIGA</span></td>
+                            <td class="p-4 font-mono">1.65</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center mt-20 pb-10">
+        <p class="text-slate-600 text-[9px] uppercase font-bold tracking-[0.3em]">RunnerNext Enterprise OS v2.0 - Built for Performance</p>
+    </footer>
+
+</body>
+</html>
